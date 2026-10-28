@@ -20,7 +20,6 @@ concurrency:
 jobs:
   deploy:
     name: Publicar bio
-    if: ${{ vars.CLOUDFLARE_BIO_PROJECT != '' }}
     runs-on: ubuntu-latest
     steps:
       - name: Baixar repositório
@@ -41,5 +40,5 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy freire-bio/site --project-name=${{ vars.CLOUDFLARE_BIO_PROJECT }} --branch=main
+          command: pages deploy freire-bio/site --project-name=freire-educacao-bio --branch=main
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
