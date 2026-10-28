@@ -92,6 +92,46 @@ jobs:
             fi
           fi
 
+      - name: Garantir DNS do novo subdomínio sem tocar nos demais
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          domain="plenaprosperidade.1mesemumdia.com"
+          target="plena-prosperidade-freire.pages.dev"
+          base="https://api.cloudflare.com/client/v4"
+          zones="$(curl -sS -G "$base/zones" --data-urlencode "name=1mesemumdia.com" -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN")"
+          if ! echo "$zones" | jq -e '.success == true and ((.result | length) > 0)' >/dev/null; then
+            echo "::warning::Sem permissão para listar a zona DNS. Configure o CNAME no painel Cloudflare, se não for criado automaticamente."
+            exit 0
+          fi
+          zone_id="$(echo "$zones" | jq -r '.result[0].id')"
+          records="$(curl -sS -G "$base/zones/$zone_id/dns_records" --data-urlencode "name=$domain" -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN")"
+          if ! echo "$records" | jq -e '.success == true' >/dev/null; then
+            echo "::warning::O token permite publicar Pages mas não consultar os registros DNS."
+            exit 0
+          fi
+          count="$(echo "$records" | jq -r '.result | length')"
+          if [ "$count" -gt 0 ]; then
+            if echo "$records" | jq -e --arg target "$target" '[.result[] | select(.type == "CNAME" and .content == $target)] | length > 0' >/dev/null; then
+              echo "CNAME do novo site já configurado."
+            else
+              echo "::warning::Já existe registro nesse subdomínio. Nenhum DNS foi sobrescrito."
+            fi
+            exit 0
+          fi
+          response="$(curl -sS -X POST "$base/zones/$zone_id/dns_records" \
+            -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" -H "Content-Type: application/json" \
+            --data "{\"type\":\"CNAME\",\"name\":\"$domain\",\"content\":\"$target\",\"ttl\":1,\"proxied\":true}")"
+          if echo "$response" | jq -e '.success == true' >/dev/null; then
+            echo "DNS CNAME criado para o site separado."
+          else
+            echo "::warning::Não foi possível criar o CNAME: confira se o token tem DNS Write."
+            echo "$response" | jq -r '.errors[]?.message // empty'
+          fi
+
       - name: Verificar configuração do domínio
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
