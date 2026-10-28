@@ -1,0 +1,102 @@
+name: Publicar Plena Prosperidade no Cloudflare Pages
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'plena-prosperidade/site/**'
+      - '.github/workflows/deploy-plena-prosperidade.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  deployments: write
+
+concurrency:
+  group: plena-prosperidade-pages-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: Publicar mentoria em site independente
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v6
+
+      - name: Validar credenciais do Cloudflare
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          if [ -z "$CLOUDFLARE_API_TOKEN" ] || [ -z "$CLOUDFLARE_ACCOUNT_ID" ]; then
+            echo "::error::Credenciais Cloudflare ausentes."
+            exit 1
+          fi
+
+      - name: Garantir projeto Cloudflare Pages exclusivo
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          api="https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/pages/projects"
+          current="$(curl -sS "$api/plena-prosperidade-freire" -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN")"
+          if echo "$current" | jq -e '.success == true' >/dev/null; then
+            echo "Projeto independente já existe."
+          else
+            result="$(curl -sS -X POST "$api" \
+              -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+              -H "Content-Type: application/json" \
+              --data '{"name":"plena-prosperidade-freire","production_branch":"main"}')"
+            if echo "$result" | jq -e '.success == true' >/dev/null; then
+              echo "Projeto Cloudflare Pages exclusivo criado."
+            else
+              echo "::error::Falha ao criar o projeto independente."
+              echo "$result" | jq -r '.errors[]?.message // empty'
+              exit 1
+            fi
+          fi
+
+      - name: Publicar site independente no Cloudflare Pages
+        uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy plena-prosperidade/site --project-name=plena-prosperidade-freire --branch=main
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Associar subdomínio próprio ao projeto
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          url="https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/pages/projects/plena-prosperidade-freire/domains"
+          result="$(curl -sS -X POST "$url" \
+            -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+            -H "Content-Type: application/json" \
+            --data '{"name":"plenaprosperidade.1mesemumdia.com"}')"
+          if echo "$result" | jq -e '.success == true' >/dev/null; then
+            echo "Domínio associado ao projeto Cloudflare Pages."
+          else
+            check="$(curl -sS "$url/plenaprosperidade.1mesemumdia.com" -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN")"
+            if echo "$check" | jq -e '.success == true' >/dev/null; then
+              echo "Domínio já associado ao projeto."
+            else
+              echo "::warning::Não foi possível associar automaticamente o domínio personalizado. O site está publicado no domínio pages.dev."
+              echo "$result" | jq -r '.errors[]?.message // empty'
+            fi
+          fi
+
+      - name: Verificar configuração do domínio
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          url="https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/pages/projects/plena-prosperidade-freire/domains/plenaprosperidade.1mesemumdia.com"
+          response="$(curl -sS "$url" -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN")"
+          echo "$response" | jq -r 'if .success then "Status de domínio: " + (.result.status // "desconhecido") else "Domínio pendente de configuração" end'
