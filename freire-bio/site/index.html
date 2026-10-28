@@ -36,7 +36,7 @@
     .line-label:before,.line-label:after{content:"";height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.2));flex:1;max-width:88px}
     .line-label:after{transform:scaleX(-1)}
     .offers{display:grid;gap:16px}
-    .offer{position:relative;display:block;background:#12161e;border:1px solid var(--border);border-radius:18px;overflow:hidden;min-height:316px;transition:transform .22s,border-color .22s,box-shadow .22s;box-shadow:0 14px 36px rgba(0,0,0,.16)}
+    .offer{position:relative;display:block;background:#12161e;border:1px solid var(--border);border-radius:18px;overflow:hidden;transition:transform .22s,border-color .22s,box-shadow .22s;box-shadow:0 14px 36px rgba(0,0,0,.16)}
     @media (hover:hover) and (pointer:fine){
       .offer:hover{transform:translateY(-5px) scale(1.008);border-color:rgba(255,255,255,.36);box-shadow:0 25px 45px rgba(0,0,0,.32)}
       .offer:hover .art{filter:brightness(1.09)}
@@ -71,9 +71,9 @@
     .lab .pill:nth-child(1){border-color:rgba(145,187,255,.45);color:#a8caff}
     .immersao .pill:nth-child(1){border-color:rgba(213,183,123,.45);color:#e3c48f}
     .date{font-size:11px;letter-spacing:.015em;color:#f1efe9;font-weight:800}
-    .offer h2{font-size:19px;line-height:1.28;letter-spacing:-.036em;font-weight:750;margin:0 0 8px}
+    .offer h2{font-size:19px;line-height:1.28;letter-spacing:-.036em;font-weight:750;margin:0}
     .offer p{margin:0;font-size:12.8px;line-height:1.58;color:#b3b7bf;max-width:490px}
-    .call{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:18px;padding-top:15px;border-top:1px solid rgba(255,255,255,.105);font-size:11px;font-weight:850;letter-spacing:.085em}
+    .call{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:15px;padding-top:15px;border-top:1px solid rgba(255,255,255,.105);font-size:11px;font-weight:850;letter-spacing:.085em}
     .lab .call{color:#bbd7ff}.immersao .call{color:#e5c58b}
     .arrow{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:rgba(255,255,255,.07);color:inherit;font-size:19px;font-weight:400;transition:transform .22s}
     .offer:focus-visible .arrow{transform:translate(3px,-3px)}
@@ -106,7 +106,6 @@
         <div class="offer-body">
           <div class="meta"><span class="pill">ONLINE E AO VIVO</span><span class="next-row"><span class="next-badge">PRÓXIMA TURMA</span><span class="date">03 NOV 2026 · 19H</span></span></div>
           <h2>Transforme sua clínica em uma máquina de faturamento</h2>
-          <p>Uma masterclass prática sobre estratégias de marketing, vendas e gestão para melhorar os resultados da clínica.</p>
           <div class="call"><span>CONHECER A MASTERCLASS</span><span class="arrow" aria-hidden="true">↗</span></div>
         </div>
       </a>
@@ -117,7 +116,6 @@
         <div class="offer-body">
           <div class="meta"><span class="pill">PRESENCIAL · ALPHAVILLE/SP</span><span class="next-row"><span class="next-badge">PRÓXIMA TURMA</span><span class="date">19 E 20 NOV 2026</span></span></div>
           <h2>Conheça o método 1 Mês em 1 Dia</h2>
-          <p>Dois dias de conteúdo e aplicação para planejar um pico de faturamento e sair com um plano de ação para a sua operação.</p>
           <div class="call"><span>CONHECER A IMERSÃO</span><span class="arrow" aria-hidden="true">↗</span></div>
         </div>
       </a>
