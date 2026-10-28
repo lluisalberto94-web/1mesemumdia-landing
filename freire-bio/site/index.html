@@ -49,11 +49,11 @@
     .immersao .art{background:radial-gradient(ellipse 60% 100% at 50% 110%,rgba(200,148,58,.27),transparent 85%),linear-gradient(125deg,#17120b,#342617 52%,#130f0a)}
     .immersao .art:before,.immersao .art:after{content:"";position:absolute;width:210px;height:210px;border:1px solid rgba(212,176,105,.16);border-radius:50%}
     .immersao .art:before{transform:translateX(-205px)}.immersao .art:after{transform:translateX(205px)}
-    .imm-lockup{position:relative;text-align:center;line-height:.97}
-    .imm-lockup .tiny{display:block;letter-spacing:.32em;color:var(--gold);font-size:9px;font-weight:800;margin-bottom:14px}
-    .imm-lockup .big{display:block;color:#f6ebd4;font-family:Georgia,"Times New Roman",serif;font-weight:600;letter-spacing:-.065em;font-size:clamp(39px,9vw,55px)}
-    .imm-lockup .big em{font-size:.43em;letter-spacing:.04em;font-style:italic;color:#cba96e;margin:0 5px}
-    .imm-lockup .small{font-size:10px;letter-spacing:.26em;color:#cfb17b;margin-top:11px;display:block;font-weight:700}
+    .immersao .art{padding:12px 18px}
+    .imm-lockup{position:relative;text-align:center;line-height:1;width:100%;display:flex;flex-direction:column;align-items:center;justify-content:center}
+    .imm-lockup .tiny{display:block;letter-spacing:.32em;color:var(--gold);font-size:9px;font-weight:800;margin-bottom:9px}
+    .imm-lockup .brand-logo{display:block;width:min(100%,320px);height:auto;max-height:85px;object-fit:contain;filter:drop-shadow(0 5px 15px rgba(0,0,0,.36))}
+    .imm-lockup .small{font-size:10px;letter-spacing:.26em;color:#cfb17b;margin-top:8px;display:block;font-weight:700}
     .offer-body{padding:21px 22px 21px}
     .meta{display:flex;gap:9px;flex-wrap:wrap;align-items:center;margin-bottom:11px}
     .pill{font-size:9px;line-height:1;letter-spacing:.13em;font-weight:850;padding:7px 10px;border-radius:50px;border:1px solid rgba(255,255,255,.2);color:#cfd5de}
@@ -71,7 +71,7 @@
     .footerbrand{font-size:10px;letter-spacing:.13em;color:#656864;margin:0 0 3px}
     .footerbrand span{color:var(--gold)}
     .footer-note{font-size:10px;color:#6d6c68;margin:0}
-    @media(max-width:480px){.page{width:min(100% - 28px,584px);padding-top:35px;padding-bottom:36px}.header{margin-bottom:29px}.brand{margin-bottom:22px}.art{height:129px}.offer-body{padding:17px 17px 16px}.offer h2{font-size:18px}.offer{min-height:0;border-radius:16px}.offers{gap:13px}.subhead{font-size:13.5px}.call{margin-top:15px;padding-top:13px}}
+    @media(max-width:480px){.page{width:min(100% - 28px,584px);padding-top:35px;padding-bottom:36px}.header{margin-bottom:29px}.brand{margin-bottom:22px}.art{height:129px}.immersao .art{padding:10px 18px}.imm-lockup .brand-logo{max-width:265px;max-height:68px}.offer-body{padding:17px 17px 16px}.offer h2{font-size:18px}.offer{min-height:0;border-radius:16px}.offers{gap:13px}.subhead{font-size:13.5px}.call{margin-top:15px;padding-top:13px}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.offer,.arrow{transition:none}}
   </style>
 </head>
@@ -101,7 +101,7 @@
       </a>
       <a class="offer immersao" data-offer="imersao" href="https://imersao.1mesemumdia.com/" aria-label="Conhecer a Imersão 1 Mês em 1 Dia">
         <div class="art">
-          <div class="imm-lockup"><span class="tiny">IMERSÃO PRESENCIAL</span><span class="big">1 MÊS <em>em</em> 1 DIA</span><span class="small">O MÉTODO POR TRÁS DO RESULTADO</span></div>
+          <div class="imm-lockup"><span class="tiny">IMERSÃO PRESENCIAL</span><img class="brand-logo" src="https://imersao.1mesemumdia.com/assets/logo-oficial-360.webp" alt="Logotipo oficial da Imersão 1 Mês em 1 Dia" width="360" height="96" decoding="async"><span class="small">O MÉTODO POR TRÁS DO RESULTADO</span></div>
         </div>
         <div class="offer-body">
           <div class="meta"><span class="pill">PRESENCIAL · ALPHAVILLE/SP</span><span class="date">19 E 20 NOV 2026</span></div>
