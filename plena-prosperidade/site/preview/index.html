@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#080a09">
 <meta name="robots" content="noindex,nofollow">
-<meta name="mpp-preview-build" content="brand-gallery-v4-2026-10-28">
+<meta name="mpp-preview-build" content="v3-doctors-gallery-cta-2026-10-29">
 <title>Mentoria Plena Prosperidade | MPP</title>
 <meta name="description" content="Mentoria Plena Prosperidade: uma jornada de gestão, liderança, estratégia e conexões para empresários da odontologia.">
 <meta property="og:title" content="Mentoria Plena Prosperidade | MPP">
@@ -85,13 +85,47 @@
  .site-header .green-btn{padding:9px 10px}
 }
 @media(prefers-reduced-motion:reduce){.mentor-photo img{transition:none}.mentor-photo:hover img{transform:none}}
+
+/* V3 refinada — foto ambiente suave, mentores reais e galeria curada */
+.hero{background:#080a09;isolation:isolate}
+.hero-photo{position:absolute;inset:0;z-index:0;pointer-events:none;background-image:linear-gradient(90deg,rgba(8,10,9,.90) 0%,rgba(8,10,9,.72) 48%,rgba(8,10,9,.89) 100%),linear-gradient(180deg,rgba(8,10,9,.46),rgba(8,10,9,.72)),url('/preview/assets/turma-quinta-edicao-v3.webp');background-size:cover;background-position:center 47%;filter:grayscale(1) saturate(.25);opacity:.73}
+.hero::before,.hero::after{z-index:1;border-color:#c5a66915}
+.hero-glow{z-index:2;opacity:.7;pointer-events:none}
+.hero-content{position:relative;z-index:3}
+.hero-bottom{z-index:3}
+.mentor-feature{display:grid;grid-template-columns:minmax(0,.98fr) minmax(0,1.02fr);gap:clamp(25px,4.3vw,62px);align-items:center}
+.mentor-feature-photo{position:relative;margin:0;min-width:0;aspect-ratio:1.03;border-radius:22px;overflow:hidden;border:1px solid #c8ab7349;background:#101510}
+.mentor-feature-photo img{width:100%;height:100%;object-fit:cover;object-position:center 26%;display:block;filter:saturate(.91) brightness(.94)}
+.mentor-feature-photo:after{content:"";position:absolute;inset:55% 0 0;background:linear-gradient(180deg,transparent,#080a09d9);pointer-events:none}
+.mentor-feature-photo figcaption{position:absolute;left:24px;right:24px;bottom:25px;z-index:2;font-size:.8rem;line-height:1.45;letter-spacing:.11em;font-weight:800;color:#f2f2eb}
+.mentor-feature-photo figcaption span{display:block;color:var(--gold);font-size:.62rem;letter-spacing:.17em;margin-top:5px}
+.mentor-feature-content h2{font-size:clamp(2.15rem,3.65vw,3.35rem);margin:14px 0 20px}
+.mentor-feature-content .lead{font-size:.95rem;max-width:none;margin:0;color:#bbc1b9;line-height:1.8}
+.mentor-duo{display:grid;grid-template-columns:1fr 1fr;gap:21px;margin:31px 0 27px;padding-top:25px;border-top:1px solid #c8ab733c}
+.mentor-duo>div+div{border-left:1px solid #c8ab7333;padding-left:21px}
+.mentor-duo small{display:block;color:var(--gold);font-size:.62rem;font-weight:800;letter-spacing:.09em}
+.mentor-duo h3{font-size:1.04rem;margin:9px 0 8px;color:#f2f2eb}
+.mentor-duo p{color:var(--muted);font-size:.76rem;line-height:1.75}
+.turma-photo.turma-group{aspect-ratio:2.12}
+.turma-photo.turma-group img{object-position:center 48%;filter:brightness(.9) saturate(.85)}
+@media(max-width:760px){
+.hero-photo{background-position:50% center;opacity:.6;background-image:linear-gradient(180deg,rgba(8,10,9,.77),rgba(8,10,9,.9)),url('/preview/assets/turma-quinta-edicao-v3.webp')}
+.mentor-feature{grid-template-columns:1fr;gap:31px}
+.mentor-feature-photo{aspect-ratio:1.2;max-width:580px;width:100%;margin-inline:auto}
+.mentor-feature-content h2{font-size:clamp(2.2rem,7.5vw,3.2rem)}
+.mentor-duo{gap:15px}
+.mentor-duo>div+div{padding-left:15px}
+.turma-photo.turma-group{aspect-ratio:4/3}
+}
+@media(max-width:430px){.mentor-feature-photo{aspect-ratio:1.08}.mentor-feature-photo figcaption{left:17px;bottom:18px;font-size:.74rem}.mentor-duo{grid-template-columns:1fr;gap:21px}.mentor-duo>div+div{border-left:0;border-top:1px solid #c8ab7333;padding:19px 0 0}}
+@media(prefers-reduced-motion:reduce){.hero-photo{filter:grayscale(1)}}
 </style>
 </head>
 <body>
 <div class="top-progress" id="progress"></div>
-<header class="site-header" id="topo"><div class="wrap header-inner"><a class="small-brand" href="#topo" aria-label="Voltar ao início da Mentoria Plena Prosperidade"><img class="header-logo" src="/preview/assets/logo-mpp.png" width="64" height="64" alt="Logo oficial da Mentoria Plena Prosperidade" decoding="async"><span class="name">PLENA<br>PROSPERIDADE</span></a><a href="#investimento" class="green-btn">QUERO FAZER PARTE <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></div></header>
+<header class="site-header" id="topo"><div class="wrap header-inner"><a class="small-brand" href="#topo" aria-label="Voltar ao início da Mentoria Plena Prosperidade"><img class="header-logo" src="/preview/assets/logo-mpp.png" width="64" height="64" alt="Logo oficial da Mentoria Plena Prosperidade" decoding="async"><span class="name">PLENA<br>PROSPERIDADE</span></a><a href="#investimento" class="green-btn">GARANTIR A VAGA <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></div></header>
 <main>
-<section class="hero relative" id="inicio"><div class="hero-glow" aria-hidden="true"></div><div class="wrap hero-content"><img class="hero-logo" src="/preview/assets/logo-mpp.png" alt="Logotipo oficial MPP — Uma geração em um ano" decoding="async" fetchpriority="high"><div class="eyebrow">MENTORIA PLENA PROSPERIDADE</div><h1>Sua clínica pode crescer.<br><em>Sua liberdade também.</em></h1><p class="lead">Uma jornada de <strong>gestão, estratégia e acompanhamento</strong> para empresários da odontologia que buscam construir um negócio mais sólido e uma vida com mais liberdade.</p><a href="#mentoria" class="green-btn">CONHEÇA A MENTORIA <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a><span class="hero-note">Com Dr. Lauro e Dra. Renata Freire</span></div><div class="hero-bottom">DESCUBRA A JORNADA <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><path d="M12 4v16m-6-6 6 6 6-6"/></svg></div></section>
+<section class="hero relative" id="inicio"><div class="hero-photo" aria-hidden="true"></div><div class="hero-glow" aria-hidden="true"></div><div class="wrap hero-content"><img class="hero-logo" src="/preview/assets/logo-mpp.png" alt="Logotipo oficial MPP — Uma geração em um ano" decoding="async" fetchpriority="high"><div class="eyebrow">MENTORIA PLENA PROSPERIDADE</div><h1>Sua clínica pode crescer.<br><em>Sua liberdade também.</em></h1><p class="lead">Uma jornada de <strong>gestão, estratégia e acompanhamento</strong> para empresários da odontologia que buscam construir um negócio mais sólido e uma vida com mais liberdade.</p><a href="#investimento" class="green-btn">GARANTIR A VAGA <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a><span class="hero-note">Com Dr. Lauro e Dra. Renata Freire</span></div><div class="hero-bottom">DESCUBRA A JORNADA <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><path d="M12 4v16m-6-6 6 6 6-6"/></svg></div></section>
 <div class="hairline"></div>
 <section class="section" id="mentoria"><div class="wrap signature reveal"><div class="kicker-line"><span class="eyebrow">NÃO É APENAS UMA MENTORIA</span></div><blockquote>Você já domina a odontologia.<br>Agora é hora de dominar <em>o negócio por trás dela.</em></blockquote><p>O crescimento de uma clínica exige mais do que técnica: pede <strong>clareza nas decisões, processos consistentes e liderança.</strong> A Plena Prosperidade reúne acompanhamento, experiências e conexões para ajudar você a evoluir nessas frentes.</p></div></section>
 <section class="section proof" id="depoimentos">
@@ -137,31 +171,37 @@
 <figure class="turma-photo turma-wide"><picture><source srcset="/preview/assets/turma-auditorio.webp" type="image/webp"><img src="/assets/turma-auditorio.jpg" alt="Palestra presencial da Freire Educação com participantes acompanhando no auditório" width="1400" height="935" loading="lazy" decoding="async"></picture><figcaption>Aprendizado presencial e troca de experiências</figcaption></figure>
 <figure class="turma-photo"><picture><source srcset="/preview/assets/turma-palco.webp" type="image/webp"><img src="/assets/turma-palco.jpg" alt="Grupo de participantes reunidos no palco durante evento da Freire Educação" width="1400" height="935" loading="lazy" decoding="async"></picture><figcaption>Uma comunidade que se encontra</figcaption></figure>
 <figure class="turma-photo"><picture><source srcset="/preview/assets/turma-conexoes.webp" type="image/webp"><img src="/assets/turma-conexoes.jpg" alt="Empresários reunidos em grupo no palco de um evento presencial" width="1400" height="935" loading="lazy" decoding="async"></picture><figcaption>Conexões que continuam após o evento</figcaption></figure>
-<figure class="turma-photo turma-story"><img src="/preview/assets/quinta-grupo.webp" alt="Grupo de três participantes no palco da quinta edição, diante do símbolo dourado do evento" width="955" height="1700" loading="lazy" decoding="async"><figcaption>Encontros que fortalecem conexões</figcaption></figure>
+<figure class="turma-photo turma-wide turma-group"><img src="/preview/assets/turma-quinta-edicao-v3.webp" alt="Turma da quinta edição reunida no palco durante a imersão presencial" width="1550" height="871" loading="lazy" decoding="async"><figcaption>Uma comunidade de empresários reunida</figcaption></figure>
 <figure class="turma-photo turma-story"><img src="/preview/assets/quinta-conexao.webp" alt="Abraço entre participantes no palco durante a quinta edição da imersão" width="955" height="1700" loading="lazy" decoding="async"><figcaption>Momentos que ficam além do evento</figcaption></figure>
-<figure class="turma-photo turma-story"><img src="/preview/assets/sexta-dialogo.webp" alt="Dois palestrantes conversam no palco durante a sexta edição" width="1133" height="1700" loading="lazy" decoding="async"><figcaption>Estratégia construída em diálogo</figcaption></figure>
 <figure class="turma-photo turma-story"><img src="/preview/assets/quinta-apresentacao.webp" alt="Palestrante de terno azul apresenta conteúdo durante a quinta edição" width="955" height="1700" loading="lazy" decoding="async"><figcaption>Conhecimento compartilhado ao vivo</figcaption></figure>
-<figure class="turma-photo turma-story"><img src="/preview/assets/sexta-palco.webp" alt="Apresentação empresarial no palco em fotografia preto e branco da sexta edição" width="1133" height="1700" loading="lazy" decoding="async"><figcaption>Decisões e visão de negócios</figcaption></figure>
 </div>
 </div><div class="wrap community center reveal"><span class="center-badge">COMUNIDADE SHARKS</span><h2>O ambiente também influencia <em>quem você se torna.</em></h2><p class="lead">Conviver com empresários que compartilham desafios parecidos amplia repertório, perspectiva e acesso a experiências que dificilmente se encontram sozinho.</p></div></section>
-<section class="section mentors" id="mentores"><div class="wrap"><div class="section-intro center reveal"><div class="eyebrow">QUEM CONDUZ SUA JORNADA</div><h2>Experiência de quem está <em>à frente de clínicas reais.</em></h2><p class="lead">Dr. Lauro e Dra. Renata Freire unem vivência na odontologia, liderança de equipes e experiência empresarial na condução da mentoria.</p></div><div class="mentor-names"><div class="mentor-card reveal"><small>MENTOR · ESTRATÉGIA E GESTÃO</small><h3>Dr. Lauro Freire</h3><p>Visão de negócios, direcionamento estratégico e liderança.</p></div><div class="mentor-card reveal"><small>MENTORA · OPERAÇÃO E PESSOAS</small><h3>Dra. Renata Freire</h3><p>Organização da operação, processos e desenvolvimento de equipes.</p></div></div>
-<div class="mentor-gallery reveal" aria-label="Registros fotográficos de encontros e apresentações presenciais da Freire Educação">
- <figure class="mentor-photo mentor-portrait">
-  <img src="/preview/assets/quinta-retrato.webp" width="955" height="1700" alt="Retrato profissional de palestrante durante a quinta edição" loading="lazy" decoding="async">
-  <figcaption>Experiência empresarial</figcaption>
- </figure>
- <figure class="mentor-photo mentor-conversation">
-  <img src="/preview/assets/mentores-encontro.webp" width="1480" height="987" alt="Apresentadores em diálogo diante da plateia durante a sexta edição" loading="lazy" decoding="async">
-  <figcaption>Troca e direcionamento ao vivo</figcaption>
- </figure>
+<section class="section mentors" id="mentores">
+<div class="wrap">
+ <div class="mentor-feature reveal">
+  <figure class="mentor-feature-photo">
+   <img src="/preview/assets/mentores-lauro-renata-v3.webp" width="1200" height="1155" alt="Dr. Lauro Freire e Dra. Renata Freire juntos em encontro presencial da Freire Educação" loading="lazy" decoding="async">
+   <figcaption>DR. LAURO E DRA. RENATA FREIRE <span>MENTORES DA PLENA PROSPERIDADE</span></figcaption>
+  </figure>
+  <div class="mentor-feature-content">
+   <div class="eyebrow">QUEM CONDUZ SUA JORNADA</div>
+   <h2>Experiência real de quem <em>vive a gestão de clínicas.</em></h2>
+   <p class="lead">Dr. Lauro e Dra. Renata Freire unem experiência na odontologia, liderança e visão empresarial para orientar a evolução de outros donos de clínicas.</p>
+   <div class="mentor-duo">
+    <div><small>ESTRATÉGIA E GESTÃO</small><h3>Dr. Lauro Freire</h3><p>Visão de negócios, direcionamento estratégico e liderança.</p></div>
+    <div><small>OPERAÇÃO E PESSOAS</small><h3>Dra. Renata Freire</h3><p>Organização da operação, processos e desenvolvimento de equipes.</p></div>
+   </div>
+   <a class="green-btn" href="#investimento">GARANTIR A VAGA <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+  </div>
+ </div>
 </div>
-<p class="footnote center">Registros reais dos encontros presenciais da Freire Educação.</p></div></section>
-<section class="section investment" id="investimento"><div class="wrap"><div class="section-intro center reveal"><div class="eyebrow">INVESTIMENTO</div><h2>Uma decisão para construir <em>um novo capítulo.</em></h2><p class="lead">Escolha a modalidade de participação. As duas incluem o ecossistema de acompanhamento, experiências e recursos da mentoria.</p></div><div class="plans"><article class="plan reveal"><div class="plan-type">UMA INSCRIÇÃO</div><h3>Individual</h3><div class="price">R$ 45.000</div><p class="cash">à vista</p><p class="or">OU</p><p class="installments">12× de R$ 4.500</p><button type="button" class="green-btn checkout" data-plan="Individual">QUERO FAZER PARTE <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button><p class="plan-hint">Participação para um empresário ou gestor.</p></article><article class="plan featured reveal"><div class="plan-type">INSCRIÇÃO CONJUNTA</div><h3>Casal / Sócios</h3><div class="price">R$ 67.500</div><p class="cash">à vista</p><p class="or">OU</p><p class="installments">12× de R$ 6.750</p><button type="button" class="green-btn checkout" data-plan="Casal / Sócios">PARTICIPAR EM DUPLA <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button><p class="plan-hint">Participação para duas pessoas na mesma inscrição.</p></article></div><p class="after-plan">O link de pagamento oficial de cada modalidade será ativado após configuração do checkout. Nenhuma cobrança é efetuada nesta prévia.</p></div></section>
+</section>
+<section class="section investment" id="investimento"><div class="wrap"><div class="section-intro center reveal"><div class="eyebrow">INVESTIMENTO</div><h2>Uma decisão para construir <em>um novo capítulo.</em></h2><p class="lead">Escolha a modalidade de participação. As duas incluem o ecossistema de acompanhamento, experiências e recursos da mentoria.</p></div><div class="plans"><article class="plan reveal"><div class="plan-type">UMA INSCRIÇÃO</div><h3>Individual</h3><div class="price">R$ 45.000</div><p class="cash">à vista</p><p class="or">OU</p><p class="installments">12× de R$ 4.500</p><button type="button" class="green-btn checkout" data-plan="Individual">GARANTIR A VAGA <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button><p class="plan-hint">Participação para um empresário ou gestor.</p></article><article class="plan featured reveal"><div class="plan-type">INSCRIÇÃO CONJUNTA</div><h3>Casal / Sócios</h3><div class="price">R$ 67.500</div><p class="cash">à vista</p><p class="or">OU</p><p class="installments">12× de R$ 6.750</p><button type="button" class="green-btn checkout" data-plan="Casal / Sócios">GARANTIR A VAGA <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button><p class="plan-hint">Participação para duas pessoas na mesma inscrição.</p></article></div><p class="after-plan">O link de pagamento oficial de cada modalidade será ativado após configuração do checkout. Nenhuma cobrança é efetuada nesta prévia.</p></div></section>
 <section class="section faq" id="faq"><div class="wrap"><div class="section-intro center reveal"><div class="eyebrow">PERGUNTAS FREQUENTES</div><h2>O que você precisa <em>saber.</em></h2></div><div class="faq-list"><details><summary>Quanto tempo dura a mentoria? <span aria-hidden="true">+</span></summary><p>A jornada tem duração de 12 meses, com dois encontros on-line mensais e as demais experiências e entregas previstas no programa.</p></details><details><summary>As experiências presenciais estão incluídas? <span aria-hidden="true">+</span></summary><p>Sim. Estão previstos um Day Clinic em Marataízes e dois encontros presenciais em Alphaville, dentro da jornada anual. Orientações de datas e logística são informadas aos participantes.</p></details><details><summary>Posso participar com meu sócio ou cônjuge? <span aria-hidden="true">+</span></summary><p>Sim. Existe a modalidade Casal / Sócios, com valor próprio para a participação conjunta de duas pessoas.</p></details><details><summary>O acesso às ferramentas está incluído? <span aria-hidden="true">+</span></summary><p>Os recursos especificados como incluídos fazem parte da jornada. No caso da implementação da plataforma de IA, o benefício previsto é uma condição especial de contratação, não implementação gratuita.</p></details></div></div></section>
-<section class="final"><div class="wrap reveal"><div class="eyebrow">MENTORIA PLENA PROSPERIDADE</div><h2>O próximo nível da sua clínica começa com <em>uma nova forma de liderar.</em></h2><p class="lead">Mais estrutura na empresa. Mais clareza nas decisões. Mais espaço para construir a vida que você deseja.</p><a class="green-btn" href="#investimento">CONHECER AS MODALIDADES <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></div></section>
+<section class="final"><div class="wrap reveal"><div class="eyebrow">MENTORIA PLENA PROSPERIDADE</div><h2>O próximo nível da sua clínica começa com <em>uma nova forma de liderar.</em></h2><p class="lead">Mais estrutura na empresa. Mais clareza nas decisões. Mais espaço para construir a vida que você deseja.</p><a class="green-btn" href="#investimento">GARANTIR A VAGA <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></div></section>
 </main>
 <footer class="footer"><div class="wrap footer-inner"><div class="wordmark">MPP · PLENA PROSPERIDADE</div><span>Mentoria empresarial · Freire Educação</span><span>Todos os direitos reservados © 2026</span></div></footer>
-<div id="sticky-cta" class="sticky-mobile"><a href="#investimento" class="green-btn">QUERO FAZER PARTE <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></div>
+<div id="sticky-cta" class="sticky-mobile"><a href="#investimento" class="green-btn">GARANTIR A VAGA <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></div>
 <div class="modal-overlay" id="checkout-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true"><div class="modal-box"><button class="modal-x" type="button" aria-label="Fechar aviso">×</button><div class="eyebrow">INSCRIÇÃO</div><h3 id="modal-title">Checkout em configuração</h3><p>O link de pagamento oficial da modalidade escolhida será conectado nesta etapa final. Nenhuma cobrança será iniciada por esta prévia.</p><button class="green-btn modal-close" type="button">ENTENDI</button></div></div>
 <script>
 (function(){
