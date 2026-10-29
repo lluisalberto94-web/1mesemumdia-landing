@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#080a09">
+<meta name="robots" content="noindex,nofollow">
+<meta name="mpp-preview-build" content="v4-narrativa-clara-2026-10-29">
+<title>Mentoria Plena Prosperidade | V4 — Prévia</title>
+<meta name="description" content="Conheça a Mentoria Plena Prosperidade: 12 meses de acompanhamento, gestão, liderança, experiências presenciais e recursos para empresários da odontologia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap">
+<style>
+:root{--bg:#080a09;--panel:#0e1210;--panel2:#141916;--cream:#f3f3ed;--muted:#a8afa8;--gold:#c8ab73;--line:#32372f;--green:#278459;--hover:#319e68;--wide:1080px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;background:var(--bg);color:var(--cream);font-family:'Manrope',system-ui,-apple-system,'Segoe UI',sans-serif;font-size:15px;line-height:1.68;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+button{font:inherit}
+button,a{-webkit-tap-highlight-color:transparent}
+button:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
+h1,h2,h3,p,figure{margin:0}
+h1,h2,h3{font-weight:800;line-height:1.16;letter-spacing:-.048em}
+h1{font-size:clamp(2.4rem,5.4vw,4.8rem)}
+h2{font-size:clamp(1.95rem,3.7vw,3.05rem)}
+h3{font-size:clamp(1.03rem,1.9vw,1.3rem)}
+em{color:var(--gold);font-style:normal}
+strong{font-weight:800}
+.wrap{width:min(calc(100% - 40px),var(--wide));margin-inline:auto}
+.center{text-align:center}
+.small{font-size:.8rem;color:var(--muted)}
+.muted{color:var(--muted)}
+.eyebrow{color:var(--gold);font-size:.72rem;font-weight:800;letter-spacing:.17em;text-transform:uppercase;margin-bottom:12px}
+.section{padding:94px 0;border-top:1px solid #c8ab7316}
+.section.alt{background:var(--panel)}
+.section-heading{max-width:790px;margin-bottom:34px}
+.section-heading.center{margin-inline:auto}
+.section-heading h2{margin-bottom:15px}
+.lead{max-width:720px;font-size:clamp(.99rem,1.55vw,1.14rem);line-height:1.85;color:var(--muted)}
+.center .lead{margin-inline:auto}
+.cta{display:inline-flex;align-items:center;justify-content:center;gap:14px;border:0;border-radius:9px;background:var(--green);color:white!important;font-weight:800;font-size:.81rem;letter-spacing:.018em;line-height:1.2;min-height:52px;padding:14px 23px;transition:transform .2s,background .2s;white-space:nowrap;cursor:pointer}
+.cta svg{width:17px;height:17px;flex:0 0 auto}
+.cta:hover{background:var(--hover);transform:translateY(-2px)}
+.cta-row{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-top:29px}
+.legal-note{font-size:.76rem;line-height:1.7;color:var(--muted)}
+.header{height:74px;position:sticky;top:0;z-index:40;background:#080a09f2;backdrop-filter:blur(16px);border-bottom:1px solid #c8ab7335}
+.header-inner{display:flex;height:100%;align-items:center;justify-content:space-between;gap:18px}
+.brand{display:flex;align-items:center;gap:10px;min-width:0}
+.brand img{display:block;width:60px;height:60px;object-fit:contain}
+.brand span{font-weight:800;font-size:.66rem;line-height:1.36;letter-spacing:.13em}
+.header .cta{min-height:41px;font-size:.71rem;padding:10px 15px}
+.progress{height:2px;position:fixed;top:0;left:0;z-index:100;background:var(--gold);width:0;pointer-events:none}
+.hero{position:relative;isolation:isolate;overflow:hidden;min-height:650px;display:flex;align-items:center;text-align:center;padding:80px 0 76px;background:#080a09}
+.hero:before{content:'';position:absolute;inset:0;background:url('/preview/assets/turma-quinta-edicao-v3.webp') center 43%/cover no-repeat;filter:grayscale(.83) blur(2px) brightness(.34);opacity:.35;z-index:-2;transform:scale(1.03)}
+.hero:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,#080a09d9 0%,#080a098c 42%,#080a09f5 100%),linear-gradient(90deg,#080a09b5,#080a0950,#080a09b5);z-index:-1}
+.hero .hero-logo{width:clamp(108px,15vw,150px);height:clamp(108px,15vw,150px);object-fit:contain;display:block;margin:0 auto 12px}
+.hero h1{max-width:850px;margin:0 auto 20px}
+.hero .lead{max-width:650px;margin-inline:auto}
+.hero-actions{margin:29px auto 0}
+.hero-metrics{margin:43px auto 0;max-width:800px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;border-top:1px solid #c8ab7350;padding-top:24px}
+.hero-metrics strong{display:block;font-size:clamp(1.08rem,2vw,1.52rem);letter-spacing:-.04em;line-height:1.35}
+.hero-metrics span{font-size:.77rem;color:#bdc4bc;display:block;margin-top:6px}
+.hero-metrics>div+div{border-left:1px solid #c8ab7338}
+.proof-layout{display:grid;grid-template-columns:1fr .9fr;gap:50px;align-items:center}
+.proof-image{overflow:hidden;border-radius:15px;border:1px solid #c8ab733d;aspect-ratio:1.54}
+.proof-image img{width:100%;height:100%;display:block;object-fit:cover}
+.proof-points{list-style:none;margin:26px 0 0;padding:0}
+.proof-points li{display:flex;align-items:flex-start;gap:11px;margin:0 0 14px;color:#dce1db;font-size:.93rem}
+.proof-points svg{width:19px;height:19px;flex:none;color:var(--gold);margin-top:3px}
+.pain-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 42px;margin-top:25px}
+.pain-item{padding:20px 0;border-top:1px solid var(--line);display:flex;gap:13px;align-items:start}
+.pain-item .num{color:var(--gold);font-weight:800;font-size:.86rem;margin-top:1px}
+.pain-item h3{font-size:1.03rem;margin-bottom:6px}
+.pain-item p{color:var(--muted);font-size:.86rem}
+.comparison{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:28px}
+.comparison-card{padding:30px;border:1px solid var(--line);border-radius:14px;background:#0b0f0d}
+.comparison-card.after{border-color:#c8ab7360;background:#141914}
+.comparison-label{font-size:.71rem;font-weight:800;letter-spacing:.18em;color:var(--muted);margin-bottom:15px}
+.comparison-card.after .comparison-label{color:var(--gold)}
+.comparison ul,.check-list{list-style:none;margin:0;padding:0}
+.comparison li{border-top:1px solid #ffffff12;padding:13px 0;color:#c1c8c0;line-height:1.57}
+.comparison li::before{content:'—';color:#8c918c;margin-right:10px}
+.comparison .after li::before{content:'✓';font-weight:800;color:var(--gold)}
+.mentor-layout{display:grid;grid-template-columns:.9fr 1.1fr;gap:55px;align-items:center}
+.mentor-image{overflow:hidden;position:relative;border-radius:14px;min-height:480px;background:#111612}
+.mentor-image img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.mentor-image:after{content:'';position:absolute;inset:50% 0 0;background:linear-gradient(transparent,#050806bd)}
+.mentor-image figcaption{position:absolute;left:23px;bottom:20px;right:23px;z-index:1;color:white;font-weight:800;font-size:.79rem}
+.mentor-mini{display:grid;gap:16px;margin:28px 0}
+.mentor-mini>div{border-top:1px solid var(--line);padding-top:14px}
+.mentor-mini h3{font-size:1.05rem;margin-bottom:5px}
+.mentor-mini p{font-size:.86rem;color:var(--muted)}
+.area-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;margin-top:26px}
+.area{background:#101511;border:1px solid var(--line);border-radius:12px;padding:26px}
+.area-label{font-size:.74rem;font-weight:800;color:var(--gold);margin-bottom:14px;letter-spacing:.12em}
+.area h3{font-size:1.19rem;margin-bottom:9px}
+.area p{font-size:.88rem;color:var(--muted)}
+.area ul{margin:14px 0 0;padding:0;list-style:none}
+.area li{font-size:.85rem;line-height:1.5;color:#d3d8d0;margin-top:9px}
+.area li::before{content:'•';color:var(--gold);margin-right:9px}
+.journey-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;margin-top:30px}
+.journey-item{padding:24px 22px;border-top:2px solid var(--gold);background:#0c100d}
+.journey-item>span{font-weight:800;color:var(--gold);font-size:.78rem;display:block;margin-bottom:14px}
+.journey-item h3{font-size:1.2rem;margin-bottom:9px}
+.journey-item p{color:var(--muted);font-size:.89rem}
+.journey-stats{display:flex;gap:22px;flex-wrap:wrap;margin-top:27px;padding:23px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.journey-stats div{flex:1 1 200px}
+.journey-stats strong{display:block;color:var(--cream);font-size:1.45rem;line-height:1.4}
+.journey-stats span{font-size:.8rem;color:var(--muted)}
+.delivery-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 36px;margin-top:20px}
+.delivery{display:grid;grid-template-columns:29px 1fr;gap:12px;padding:22px 0;border-top:1px solid var(--line)}
+.delivery .tick{width:23px;height:23px;border:1px solid #c8ab7380;border-radius:50%;display:flex;align-items:center;justify-content:center}
+.delivery .tick svg{width:14px;height:14px;color:var(--gold)}
+.delivery h3{font-size:1.01rem;margin-bottom:5px}
+.delivery p{color:var(--muted);font-size:.86rem}
+.delivery-bottom{padding:20px 0 0;font-size:.78rem;color:var(--muted)}
+.audience-layout{display:grid;grid-template-columns:1fr 1fr;gap:46px;align-items:start}
+.audience-list{list-style:none;margin:0;padding:0}
+.audience-list li{display:flex;gap:11px;border-bottom:1px solid var(--line);padding:13px 0;line-height:1.65}
+.audience-list li::before{content:'✓';font-weight:800;color:var(--gold)}
+.audience-note{background:#151914;border-left:2px solid var(--gold);padding:24px 28px}
+.audience-note p{font-size:.96rem;color:#c3cbc0}
+.extra-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;margin-top:24px}
+.extra{padding:27px 24px;border:1px solid var(--line);border-radius:12px;background:#0c100e}
+.extra small{color:var(--gold);font-size:.71rem;font-weight:800;letter-spacing:.1em}
+.extra h3{font-size:1.12rem;margin:15px 0 11px}
+.extra p{font-size:.87rem;color:var(--muted)}
+.photo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.photo{position:relative;overflow:hidden;border-radius:10px;aspect-ratio:1.17;background:#141a16}
+.photo.wide{grid-column:span 2;aspect-ratio:2.42}
+.photo img{width:100%;height:100%;object-fit:cover;display:block;filter:brightness(.88) saturate(.83);transition:transform .4s}
+.photo:hover img{transform:scale(1.025)}
+.photo:after{content:'';position:absolute;inset:55% 0 0;background:linear-gradient(transparent,#050805c4)}
+.photo figcaption{position:absolute;z-index:1;color:white;bottom:14px;left:16px;right:16px;font-size:.78rem;font-weight:800;text-shadow:0 2px 7px #000b}
+.video-grid{display:grid;grid-template-columns:1fr 1fr;gap:17px}
+.video-card{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#111512}
+.video-frame{aspect-ratio:16/9;position:relative;overflow:hidden;background:#0d100d}
+.video-start{appearance:none;display:block;position:absolute;inset:0;width:100%;height:100%;border:0;padding:0;background:#070907;cursor:pointer}
+.video-start img{width:100%;height:100%;object-fit:cover;filter:brightness(.72);display:block}
+.play-circle{position:absolute;width:64px;height:64px;left:50%;top:50%;transform:translate(-50%,-50%);border-radius:50%;display:grid;place-items:center;border:1px solid #e9d8b7;background:#050805d9;color:white;transition:transform .2s}
+.play-circle svg{width:26px;height:26px}
+.video-start:hover .play-circle{transform:translate(-50%,-50%) scale(1.09)}
+.video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.video-caption{padding:20px;display:flex;align-items:center;justify-content:space-between;gap:16px;font-size:.88rem}
+.video-caption a{color:var(--gold);font-size:.79rem;text-decoration:underline;text-underline-offset:3px}
+.plans{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:29px}
+.plan{border:1px solid #666b5d55;background:#101410;padding:34px 30px;border-radius:14px}
+.plan.featured{border-color:#c8ab7385;background:#161a14}
+.plan .plan-kind{font-size:.71rem;color:var(--gold);font-weight:800;letter-spacing:.15em;margin-bottom:12px}
+.plan h3{font-size:1.55rem;margin-bottom:19px}
+.plan .price{font-size:clamp(1.95rem,3.7vw,2.8rem);font-weight:800;letter-spacing:-.045em;line-height:1.25}
+.plan .cash{color:var(--muted);font-size:.8rem;margin:4px 0 8px}
+.plan .installments{font-size:1rem;color:#e5e9e3;font-weight:800;margin-bottom:20px}
+.plan .cta{width:100%;margin-top:24px}
+.plan ul{margin:0;padding-left:18px;color:#bec6bc;font-size:.83rem;line-height:1.8}
+.plan li::marker{color:var(--gold)}
+.plan .hint{font-size:.78rem;color:var(--muted);margin-top:12px}
+.investment-note{margin-top:22px;text-align:center}
+.close-section{background:linear-gradient(140deg,#14170f,#080a09 52%);border-top:1px solid #c8ab732a}
+.close-section .wrap{max-width:800px;text-align:center}
+.close-section h2{margin-bottom:14px}
+.close-section .lead{margin-inline:auto}
+.close-section .cta{margin-top:26px}
+.faq{max-width:840px;margin:auto}
+.faq details{border-bottom:1px solid var(--line);padding:21px 0}
+.faq summary{cursor:pointer;list-style:none;font-weight:800;display:flex;justify-content:space-between;gap:10px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:after{content:'+';font-size:1.35rem;color:var(--gold);font-weight:500}
+.faq details[open] summary:after{content:'−'}
+.faq details p{padding-top:10px;color:var(--muted);font-size:.9rem;max-width:760px}
+.footer{padding:32px 0;color:var(--muted);border-top:1px solid var(--line)}
+.footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center;font-size:.75rem}
+.footer strong{color:var(--gold);font-size:.78rem;letter-spacing:.05em}
+.sticky-mobile{display:none}
+.modal{position:fixed;inset:0;z-index:90;display:none;align-items:center;justify-content:center;padding:20px;background:#010302e8}
+.modal.open{display:flex}
+.modal-box{max-width:500px;width:100%;background:#151915;border:1px solid #c8ab7370;border-radius:15px;padding:30px;position:relative}
+.modal-box h2{font-size:1.65rem;margin:8px 0 14px}
+.modal-box p{color:var(--muted);line-height:1.8;font-size:.91rem}
+.modal-close{position:absolute;right:15px;top:10px;cursor:pointer;background:transparent;border:0;color:white;font-size:1.6rem;width:38px;height:38px}
+.modal-box .cta{margin-top:22px}
+@media(max-width:860px){
+ .section{padding:76px 0}
+ .proof-layout,.mentor-layout,.audience-layout{grid-template-columns:1fr;gap:28px}
+ .mentor-image{min-height:390px;max-height:550px}
+ .extra-list{grid-template-columns:1fr 1fr}
+ .hero{min-height:590px}
+}
+@media(max-width:640px){
+ html{scroll-padding-top:70px}
+ body{font-size:14px}
+ .wrap{width:min(calc(100% - 34px),var(--wide))}
+ .header{height:66px}
+ .header-inner{gap:8px}
+ .brand{gap:5px}
+ .brand img{width:45px;height:45px}
+ .brand span{font-size:.52rem;letter-spacing:.07em}
+ .header .cta{padding:10px 11px;min-height:39px;font-size:.66rem}
+ .header .cta svg{width:14px;height:14px}
+ .hero{min-height:630px;padding:70px 0 56px}
+ .hero h1{font-size:clamp(2.2rem,10vw,3.55rem)}
+ .hero .hero-logo{width:125px;height:125px;margin-bottom:14px}
+ .hero-metrics{gap:9px;margin-top:33px;padding-top:17px}
+ .hero-metrics strong{font-size:.91rem}
+ .hero-metrics span{font-size:.66rem;line-height:1.5}
+ .section{padding:66px 0}
+ .section-heading{margin-bottom:23px}
+ .pain-grid,.comparison,.area-list,.journey-list,.delivery-grid,.plans,.video-grid{grid-template-columns:1fr}
+ .comparison{gap:12px}
+ .comparison-card{padding:23px}
+ .mentor-image{min-height:350px;aspect-ratio:4/4.2}
+ .area{padding:22px}
+ .extra-list{grid-template-columns:1fr;gap:12px}
+ .photo-grid{display:flex;overflow-x:auto;gap:10px;scroll-snap-type:x mandatory;margin-inline:-17px;padding-inline:17px;padding-bottom:9px;scrollbar-width:none}
+ .photo-grid::-webkit-scrollbar{display:none}
+ .photo,.photo.wide{flex:0 0 min(82vw,365px);height:auto;aspect-ratio:4/3;scroll-snap-align:center}
+ .video-caption{padding:16px}
+ .plan{padding:27px 22px}
+ .footer .wrap{flex-direction:column;align-items:flex-start}
+ .sticky-mobile{display:block;position:fixed;left:0;right:0;bottom:0;z-index:35;padding:9px max(15px,env(safe-area-inset-right)) calc(9px + env(safe-area-inset-bottom));background:#080a09ed;border-top:1px solid #c8ab733b;transform:translateY(110%);transition:transform .2s}
+ .sticky-mobile.visible{transform:translateY(0)}
+ .sticky-mobile .cta{width:100%;min-height:49px}
+ .footer{padding-bottom:110px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.cta,.photo img,.play-circle,.sticky-mobile{transition:none}}
+</style></head><body>
+<div class="progress" id="progress"></div>
+<header class="header" id="topo"><div class="wrap header-inner">
+ <a class="brand" href="#inicio" aria-label="Voltar ao início da Plena Prosperidade"><img src="/preview/assets/logo-mpp.png" width="60" height="60" alt="MPP — Mentoria Plena Prosperidade" decoding="async"><span>PLENA<br>PROSPERIDADE</span></a>
+ <a href="#investimento" class="cta ">GARANTIR A VAGA <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+</div></header>
+<main>
+<section class="hero" id="inicio"><div class="wrap">
+ <img class="hero-logo" src="/preview/assets/logo-mpp.png" width="150" height="150" alt="Logotipo da Mentoria Plena Prosperidade" fetchpriority="high">
+ <div class="eyebrow">MENTORIA PARA EMPRESÁRIOS DA ODONTOLOGIA</div>
+ <h1>Sua clínica pode crescer.<br><em>Sua liberdade também.</em></h1>
+ <p class="lead">Uma jornada de 12 meses para organizar a gestão, desenvolver líderes e construir uma clínica menos dependente de você. Com a experiência de quem conduz operações odontológicas reais.</p>
+ <div class="hero-actions"><a href="#investimento" class="cta ">GARANTIR A VAGA <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></div>
+ <div class="hero-metrics">
+  <div><strong>12 meses</strong><span>de acompanhamento</span></div>
+  <div><strong>2 encontros</strong><span>on-line por mês</span></div>
+  <div><strong>3 experiências</strong><span>presenciais previstas</span></div>
+ </div>
+</div></section>
+
+<section class="section" id="prova"><div class="wrap">
+ <div class="proof-layout">
+  <div>
+   <div class="eyebrow">GESTÃO NA PRÁTICA</div>
+   <h2>Mais do que conceitos. <em>Experiência de quem opera clínicas.</em></h2>
+   <p class="lead" style="margin-top:17px">A Plena Prosperidade reúne orientação estratégica, trocas entre empresários e experiências dentro do ecossistema Freire Educação. O aprendizado parte de desafios reais da operação.</p>
+   <ul class="proof-points">
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg><span>Mentores com vivência diária na gestão odontológica.</span></li>
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg><span>Encontros para discutir decisões e desafios de negócios.</span></li>
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg><span>Registros reais de eventos e experiências presenciais.</span></li>
+   </ul>
+  </div>
+  <figure class="proof-image"><img src="/preview/assets/turma-quinta-edicao-v3.webp" alt="Participantes reunidos no palco da quinta edição da Imersão 1 Mês em 1 Dia" loading="lazy" decoding="async"></figure>
+ </div>
+</div></section>
+
+<section class="section alt" id="desafios"><div class="wrap">
+ <div class="section-heading">
+  <div class="eyebrow">VOCÊ RECONHECE ESSE CENÁRIO?</div>
+  <h2>A clínica até cresce. <em>Mas tudo continua passando por você.</em></h2>
+  <p class="lead">Quando a operação depende do dono para funcionar, trabalhar mais nem sempre significa construir uma empresa mais forte.</p>
+ </div>
+ <div class="pain-grid">
+  <div class="pain-item"><span class="num">01</span><div><h3>Decisões centralizadas</h3><p>Você resolve problemas de equipe, processos e clientes o dia inteiro.</p></div></div>
+  <div class="pain-item"><span class="num">02</span><div><h3>Falta de clareza nos números</h3><p>O faturamento aparece, mas nem sempre fica claro de onde vem o resultado.</p></div></div>
+  <div class="pain-item"><span class="num">03</span><div><h3>Comercial sem rotina</h3><p>Oportunidades e orçamentos podem ficar sem acompanhamento consistente.</p></div></div>
+  <div class="pain-item"><span class="num">04</span><div><h3>Liderança sobrecarregada</h3><p>A equipe depende da sua presença para decisões que deveriam ter processos.</p></div></div>
+ </div>
+</div></section>
+
+<section class="section" id="transformacao"><div class="wrap">
+ <div class="section-heading center"><div class="eyebrow">A TRANSFORMAÇÃO BUSCADA</div>
+  <h2>Do improviso a uma gestão <em>com mais direção.</em></h2>
+  <p class="lead">O objetivo é desenvolver uma operação mais organizada. Os resultados dependem da realidade de cada clínica e da implementação das decisões.</p>
+ </div>
+ <div class="comparison">
+  <div class="comparison-card"><div class="comparison-label">ANTES · OPERAÇÃO CENTRALIZADA</div><ul>
+   <li>O proprietário concentra decisões e tarefas</li>
+   <li>Metas e indicadores pouco claros</li>
+   <li>Equipe executa sem processos consistentes</li>
+   <li>O comercial depende de esforços pontuais</li>
+   <li>O crescimento aumenta a sobrecarga</li>
+  </ul></div>
+  <div class="comparison-card after"><div class="comparison-label">DEPOIS · OPERAÇÃO A ESTRUTURAR</div><ul>
+   <li>Responsabilidades e prioridades mais definidas</li>
+   <li>Gestão orientada por metas e indicadores</li>
+   <li>Rotinas claras para equipes e lideranças</li>
+   <li>Atendimento e vendas com acompanhamento</li>
+   <li>Mais previsibilidade para tomar decisões</li>
+  </ul></div>
+ </div>
+</div></section>
+
+<section class="section alt" id="mentores"><div class="wrap">
+ <div class="mentor-layout">
+  <figure class="mentor-image"><img src="/preview/assets/mentores-lauro-renata-v3.webp" alt="Dr. Lauro e Dra. Renata Freire juntos em evento presencial da Freire Educação" loading="lazy" decoding="async"><figcaption>DR. LAURO E DRA. RENATA FREIRE</figcaption></figure>
+  <div>
+   <div class="eyebrow">QUEM CONDUZ SUA JORNADA</div>
+   <h2>Duas visões que se complementam <em>na gestão de clínicas.</em></h2>
+   <p class="lead" style="margin-top:17px">Dr. Lauro e Dra. Renata Freire conectam estratégia empresarial, operação e desenvolvimento de pessoas na mentoria.</p>
+   <div class="mentor-mini">
+    <div><h3>Dr. Lauro Freire</h3><p>Estratégia, visão de negócios, direcionamento e liderança.</p></div>
+    <div><h3>Dra. Renata Freire</h3><p>Operação, processos, organização de equipes e desenvolvimento de pessoas.</p></div>
+   </div>
+   <a href="#investimento" class="cta ">GARANTIR A VAGA <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+  </div>
+ </div>
+</div></section>
+
+<section class="section" id="frentes"><div class="wrap">
+ <div class="section-heading center"><div class="eyebrow">O QUE VOCÊ VAI TRABALHAR</div>
+  <h2>As frentes que sustentam <em>uma clínica bem gerida.</em></h2>
+  <p class="lead">Organizamos os temas da mentoria em quatro áreas práticas para que você entenda onde estão as oportunidades de evolução.</p>
+ </div>
+ <div class="area-list">
+  <article class="area"><div class="area-label">ÁREA 01</div><h3>Gestão e indicadores</h3><p>Mais clareza para planejar, acompanhar e corrigir a rota.</p><ul><li>Diagnóstico dos principais gargalos</li><li>Metas, prioridades e acompanhamento</li><li>Visão de desempenho da clínica</li></ul></article>
+  <article class="area"><div class="area-label">ÁREA 02</div><h3>Pessoas e liderança</h3><p>Desenvolvimento de lideranças e alinhamento da equipe.</p><ul><li>Responsabilidades e autonomia</li><li>Rotina de gestão de pessoas</li><li>Comunicação e cultura de execução</li></ul></article>
+  <article class="area"><div class="area-label">ÁREA 03</div><h3>Comercial e relacionamento</h3><p>Mais organização para acompanhar oportunidades e pacientes.</p><ul><li>Processo de atendimento</li><li>Rotina comercial e scripts</li><li>Acompanhamento de indicadores de vendas</li></ul></article>
+  <article class="area"><div class="area-label">ÁREA 04</div><h3>Processos e estratégia</h3><p>Estruturar a rotina para reduzir improvisos no dia a dia.</p><ul><li>Padronização e organização operacional</li><li>Planejamento estratégico</li><li>Identificação de oportunidades de melhoria</li></ul></article>
+ </div>
+</div></section>
+
+<section class="section alt" id="jornada"><div class="wrap">
+ <div class="section-heading"><div class="eyebrow">COMO A MENTORIA FUNCIONA</div>
+  <h2>Acompanhamento ao longo do ano. <em>Não apenas aulas isoladas.</em></h2>
+  <p class="lead">Você tem uma combinação de orientação individual, encontros recorrentes, experiências presenciais e ferramentas de apoio.</p>
+ </div>
+ <div class="journey-list">
+  <article class="journey-item"><span>01 · DIRECIONAMENTO</span><h3>Sessão estratégica individual</h3><p>Uma sessão com Dr. Lauro e Dra. Renata para discutir a realidade da sua clínica e prioridades de desenvolvimento.</p></article>
+  <article class="journey-item"><span>02 · ACOMPANHAMENTO</span><h3>Dois encontros on-line por mês</h3><p>Encontros com os mentores e a comunidade Sharks ao longo de 12 meses, incluindo discussão de desafios e direcionamento.</p></article>
+  <article class="journey-item"><span>03 · APLICAÇÃO</span><h3>Hot Seats, especialistas e materiais</h3><p>Trocas sobre situações práticas, aulas complementares e recursos de apoio para levar o aprendizado à operação.</p></article>
+  <article class="journey-item"><span>04 · EXPERIÊNCIA</span><h3>Três encontros presenciais previstos</h3><p>Um Day Clinic em Marataízes e dois encontros em Alphaville, com espaço para aprendizado e networking.</p></article>
+ </div>
+ <div class="journey-stats">
+  <div><strong>12 meses</strong><span>de jornada na mentoria</span></div>
+  <div><strong>2 por mês</strong><span>encontros on-line previstos</span></div>
+  <div><strong>1 + 2</strong><span>Day Clinic + encontros em Alphaville</span></div>
+ </div>
+</div></section>
+
+<section class="section" id="entregaveis"><div class="wrap">
+ <div class="section-heading"><div class="eyebrow">O QUE ESTÁ INCLUÍDO</div>
+  <h2>Saiba exatamente <em>o que faz parte da mentoria.</em></h2>
+  <p class="lead">Acompanhamento, experiências, comunidade, programas e recursos reunidos em uma jornada anual.</p>
+ </div>
+ <div class="delivery-grid">
+  <article class="delivery"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg></span><div><h3>Sessão individual com os mentores</h3><p>Uma sessão estratégica com Dr. Lauro e Dra. Renata.</p></div></article>
+<article class="delivery"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg></span><div><h3>Encontros on-line recorrentes</h3><p>Dois encontros mensais ao longo dos 12 meses.</p></div></article>
+<article class="delivery"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg></span><div><h3>Experiências presenciais</h3><p>Um Day Clinic e dois encontros em Alphaville.</p></div></article>
+<article class="delivery"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg></span><div><h3>Comunidade Sharks</h3><p>Grupo exclusivo para troca entre empresários da odontologia.</p></div></article>
+<article class="delivery"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg></span><div><h3>Hot Seats e especialistas</h3><p>Discussões práticas, convidados e conteúdos complementares.</p></div></article>
+<article class="delivery"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg></span><div><h3>CRM e ferramentas de apoio</h3><p>Recursos para gestão, relacionamento e acompanhamento comercial.</p></div></article>
+<article class="delivery"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg></span><div><h3>Plataforma educacional</h3><p>Conteúdos e materiais de apoio da mentoria.</p></div></article>
+<article class="delivery"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg></span><div><h3>Scripts e recursos de marketing</h3><p>Materiais de vendas, atendimento e estratégias comerciais.</p></div></article>
+<article class="delivery"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg></span><div><h3>Formações complementares</h3><p>Imersão 1 Mês em 1 Dia, Curso de Vendas e Academia de Vendas.</p></div></article>
+<article class="delivery"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg></span><div><h3>Condições com parceiros</h3><p>Condições diferenciadas junto a fornecedores e para implementação de plataforma de IA.</p></div></article>
+ </div>
+ <p class="delivery-bottom">A implementação de plataforma de IA não está incluída gratuitamente; o benefício previsto é uma condição especial de contratação. Datas, formatos e regras específicas das experiências são comunicados aos participantes.</p>
+</div></section>
+
+<section class="section alt" id="paraquem"><div class="wrap">
+ <div class="audience-layout">
+  <div><div class="eyebrow">PARA QUEM É</div><h2>Para quem quer ser <em>empresário da própria clínica.</em></h2>
+   <p class="lead" style="margin-top:15px">A Plena Prosperidade é para donos e gestores de clínicas odontológicas que desejam sair da gestão por urgências e desenvolver uma operação mais organizada.</p>
+  </div>
+  <div><ul class="audience-list">
+   <li>Você é dentista empresário ou gestor de clínica.</li>
+   <li>Quer organizar números, processos e rotina comercial.</li>
+   <li>Precisa desenvolver a equipe para reduzir a centralização.</li>
+   <li>Valoriza contato com mentores e outros empresários.</li>
+   <li>Está disposto a implementar e acompanhar mudanças ao longo do ano.</li>
+  </ul></div>
+ </div>
+ <div class="audience-note" style="margin-top:29px"><p>A mentoria é um espaço de direcionamento e desenvolvimento empresarial. Não se trata de promessa de faturamento específico ou de uma operação pronta sem participação do gestor.</p></div>
+</div></section>
+
+<section class="section" id="complementos"><div class="wrap">
+ <div class="section-heading center"><div class="eyebrow">ALÉM DOS ENCONTROS</div><h2>Formações e experiências <em>que ampliam a jornada.</em></h2>
+  <p class="lead">Programas complementares previstos no pacote da Plena Prosperidade para aprofundar temas de implementação, gestão e vendas.</p>
+ </div>
+ <div class="extra-list">
+  <article class="extra"><small>FORMAÇÃO INCLUÍDA 01</small><h3>Imersão 1 Mês em 1 Dia</h3><p>Experiência dedicada a estratégias para organizar ações comerciais e de faturamento na clínica.</p></article>
+  <article class="extra"><small>FORMAÇÃO INCLUÍDA 02</small><h3>Curso de Vendas</h3><p>Conteúdos para apoiar a estruturação do atendimento e das vendas na operação.</p></article>
+  <article class="extra"><small>FORMAÇÃO INCLUÍDA 03</small><h3>Academia de Vendas</h3><p>Desenvolvimento complementar de conhecimentos e práticas comerciais.</p></article>
+ </div>
+ <div class="cta-row" style="justify-content:center"><a href="#investimento" class="cta ">GARANTIR A VAGA <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></div>
+</div></section>
+
+<section class="section alt" id="experiencias"><div class="wrap">
+ <div class="section-heading"><div class="eyebrow">PESSOAS, TROCAS E EXPERIÊNCIAS</div>
+  <h2>Uma comunidade que se encontra <em>fora da tela.</em></h2>
+  <p class="lead">Registros reais de eventos da Freire Educação, incluindo a Imersão 1 Mês em 1 Dia. Essas fotos mostram o ambiente de aprendizado e conexão do ecossistema, não necessariamente uma turma exclusiva da mentoria.</p>
+ </div>
+ <div class="photo-grid">
+  <figure class="photo wide"><img src="/preview/assets/turma-quinta-edicao-v3.webp" alt="Grupo de participantes reunidos no palco da quinta edição da imersão" loading="lazy" decoding="async"><figcaption>A experiência de aprender em comunidade</figcaption></figure>
+  <figure class="photo "><img src="/preview/assets/turma-auditorio.webp" alt="Auditório de evento presencial com participantes acompanhando apresentação" loading="lazy" decoding="async"><figcaption>Aprendizado presencial</figcaption></figure>
+  <figure class="photo "><img src="/preview/assets/turma-palco.webp" alt="Grupo de participantes no palco da Freire Educação" loading="lazy" decoding="async"><figcaption>Conexões profissionais</figcaption></figure>
+  <figure class="photo "><img src="/preview/assets/quinta-apresentacao.webp" alt="Apresentação de especialista no palco durante a imersão" loading="lazy" decoding="async"><figcaption>Conteúdo ao vivo</figcaption></figure>
+  <figure class="photo "><img src="/preview/assets/quinta-conexao.webp" alt="Participantes reunidos e se cumprimentando após encontro" loading="lazy" decoding="async"><figcaption>Trocas entre empresários</figcaption></figure>
+ </div>
+ <p class="legal-note" style="margin-top:15px">Na jornada da Plena Prosperidade estão previstos um Day Clinic em Marataízes e dois encontros presenciais em Alphaville.</p>
+</div></section>
+
+<section class="section" id="depoimentos"><div class="wrap">
+ <div class="section-heading center"><div class="eyebrow">RELATOS EM VÍDEO</div><h2>Conheça experiências <em>contadas por quem participou.</em></h2><p class="lead">Dois depoimentos originais em vídeo. Assista e conheça as experiências compartilhadas.</p></div>
+ <div class="video-grid"><article class="video-card">
+  <div class="video-frame">
+   <button class="video-start" type="button" data-youtube="1fSRk6s-xDs" data-start="5" aria-label="Reproduzir depoimento em vídeo 1">
+    <img src="https://i.ytimg.com/vi/1fSRk6s-xDs/hqdefault.jpg" alt="Capa do depoimento em vídeo 1" loading="lazy" decoding="async" width="480" height="360">
+    <span class="play-circle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m9 6 9 6-9 6V6z" fill="currentColor"/></svg></span>
+   </button>
+  </div>
+  <div class="video-caption"><strong>Depoimento em vídeo 01</strong><a href="https://www.youtube.com/watch?v=1fSRk6s-xDs&t=5s" target="_blank" rel="noopener noreferrer">Ver no YouTube <span aria-hidden="true">↗</span></a></div>
+ </article><article class="video-card">
+  <div class="video-frame">
+   <button class="video-start" type="button" data-youtube="mnxOkRQE8Jg" data-start="0" aria-label="Reproduzir depoimento em vídeo 2">
+    <img src="https://i.ytimg.com/vi/mnxOkRQE8Jg/hqdefault.jpg" alt="Capa do depoimento em vídeo 2" loading="lazy" decoding="async" width="480" height="360">
+    <span class="play-circle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m9 6 9 6-9 6V6z" fill="currentColor"/></svg></span>
+   </button>
+  </div>
+  <div class="video-caption"><strong>Depoimento em vídeo 02</strong><a href="https://www.youtube.com/watch?v=mnxOkRQE8Jg" target="_blank" rel="noopener noreferrer">Ver no YouTube <span aria-hidden="true">↗</span></a></div>
+ </article></div>
+ <p class="legal-note center" style="margin-top:16px">Os vídeos do YouTube são carregados somente após o clique.</p>
+</div></section>
+
+<section class="section alt" id="investimento"><div class="wrap">
+ <div class="section-heading center"><div class="eyebrow">INVESTIMENTO</div><h2>Escolha sua modalidade <em>de participação.</em></h2><p class="lead">As duas modalidades incluem a jornada de acompanhamento e os recursos previstos no programa.</p></div>
+ <div class="plans">
+  <article class="plan"><div class="plan-kind">PARTICIPAÇÃO INDIVIDUAL</div><h3>Individual</h3>
+    <div class="price">R$ 45.000</div><div class="cash">à vista</div><div class="installments">ou 12× de R$ 4.500</div>
+    <ul><li>12 meses de acompanhamento</li><li>Uma sessão estratégica individual</li><li>Encontros on-line e presenciais previstos</li><li>Comunidade, materiais e formações incluídas</li></ul>
+    <button type="button" class="cta select-plan" data-plan="Individual">GARANTIR A VAGA <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button><p class="hint">Uma pessoa na inscrição.</p>
+  </article>
+  <article class="plan featured"><div class="plan-kind">PARTICIPAÇÃO CONJUNTA</div><h3>Casal / Sócios</h3>
+    <div class="price">R$ 67.500</div><div class="cash">à vista</div><div class="installments">ou 12× de R$ 6.750</div>
+    <ul><li>12 meses de acompanhamento</li><li>Participação conjunta de duas pessoas</li><li>Encontros on-line e presenciais previstos</li><li>Comunidade, materiais e formações incluídas</li></ul>
+    <button type="button" class="cta select-plan" data-plan="Casal / Sócios">GARANTIR A VAGA <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button><p class="hint">Duas pessoas na mesma inscrição.</p>
+  </article>
+ </div>
+ <p class="legal-note investment-note">Prévia de apresentação. Os links oficiais de checkout ainda serão conectados; nenhum pagamento é iniciado nesta versão.</p>
+</div></section>
+
+<section class="section close-section" id="decisao"><div class="wrap">
+ <div class="eyebrow">O PRÓXIMO CAPÍTULO DA SUA CLÍNICA</div>
+ <h2>O crescimento da clínica precisa acontecer <em>com mais estrutura.</em></h2>
+ <p class="lead">A jornada é sobre organizar a empresa, fortalecer lideranças e melhorar a qualidade das decisões — sem depender apenas do esforço do dono.</p>
+ <a href="#investimento" class="cta ">GARANTIR A VAGA <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+</div></section>
+
+<section class="section alt" id="faq"><div class="wrap"><div class="section-heading center"><div class="eyebrow">PERGUNTAS FREQUENTES</div><h2>Dúvidas sobre <em>a Plena Prosperidade.</em></h2></div>
+ <div class="faq">
+  <details><summary>Quanto tempo dura a mentoria?</summary><p>A jornada tem duração de 12 meses, com previsão de dois encontros on-line mensais, além das demais entregas e experiências previstas.</p></details>
+  <details><summary>Existe acompanhamento individual?</summary><p>Sim. O programa prevê uma sessão estratégica individual com Dr. Lauro e Dra. Renata, além da dinâmica de acompanhamento coletivo ao longo do ano.</p></details>
+  <details><summary>As experiências presenciais estão incluídas?</summary><p>O programa prevê um Day Clinic em Marataízes e dois encontros presenciais em Alphaville. Datas, logística e orientações são comunicadas aos participantes.</p></details>
+  <details><summary>Posso participar com meu sócio ou cônjuge?</summary><p>Sim. Existe uma modalidade de participação conjunta chamada Casal / Sócios, para duas pessoas na mesma inscrição.</p></details>
+  <details><summary>O acesso às ferramentas faz parte da mentoria?</summary><p>Estão previstos recursos de apoio, incluindo CRM, materiais e plataforma educacional. A implementação de plataforma de IA tem condição especial de contratação e não está incluída gratuitamente.</p></details>
+  <details><summary>O pagamento já está disponível nesta prévia?</summary><p>Não. Esta é uma versão de avaliação da página. Os links oficiais de inscrição serão conectados antes da publicação comercial.</p></details>
+ </div>
+</div></section>
+</main>
+<footer class="footer"><div class="wrap"><strong>MPP · MENTORIA PLENA PROSPERIDADE</strong><span>Freire Educação · Empresários da odontologia</span><span>© 2026</span></div></footer>
+<div class="sticky-mobile" id="sticky-cta"><a href="#investimento" class="cta ">GARANTIR A VAGA <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></div>
+<div class="modal" id="checkout-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
+ <div class="modal-box"><button type="button" class="modal-close" aria-label="Fechar aviso">×</button>
+  <div class="eyebrow">INSCRIÇÃO · PRÉVIA</div><h2 id="modal-title">Checkout em configuração</h2>
+  <p id="modal-copy">A forma de pagamento oficial ainda não foi conectada. Esta prévia não inicia nenhuma cobrança.</p>
+  <a class="cta" href="#investimento" id="modal-back">GARANTIR A VAGA <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+ </div>
+</div>
+<script>
+(function(){
+ 'use strict';
+ const reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+ const bar=document.getElementById('progress'),sticky=document.getElementById('sticky-cta');
+ let ticking=false;
+ function onScroll(){const d=document.documentElement,denom=Math.max(1,d.scrollHeight-innerHeight);bar.style.width=(Math.min(1,Math.max(0,scrollY/denom))*100)+'%';sticky.classList.toggle('visible',innerWidth<=640 && scrollY>450);ticking=false}
+ window.addEventListener('scroll',()=>{if(!ticking){ticking=true;requestAnimationFrame(onScroll)}},{passive:true});
+ window.addEventListener('resize',onScroll,{passive:true});onScroll();
+ const modal=document.getElementById('checkout-modal'),modalCopy=document.getElementById('modal-copy');
+ let lastFocused=null;
+ function closeModal(){modal.classList.remove('open');modal.setAttribute('aria-hidden','true');if(lastFocused&&typeof lastFocused.focus==='function')lastFocused.focus()}
+ document.querySelectorAll('.select-plan').forEach(btn=>btn.addEventListener('click',()=>{
+  lastFocused=btn;modalCopy.textContent='Modalidade selecionada: '+btn.dataset.plan+'. Os links oficiais de pagamento ainda não foram configurados. Esta prévia não efetua cobranças.';
+  modal.classList.add('open');modal.setAttribute('aria-hidden','false');modal.querySelector('.modal-close').focus();
+ }));
+ modal.querySelector('.modal-close').addEventListener('click',closeModal);
+ modal.querySelector('#modal-back').addEventListener('click',closeModal);
+ modal.addEventListener('click',e=>{if(e.target===modal)closeModal()});
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'&&modal.classList.contains('open'))closeModal()});
+ document.querySelectorAll('.video-start').forEach(button=>{
+  button.addEventListener('click',()=>{
+   const id=button.dataset.youtube,start=Number(button.dataset.start||0);
+   if(!/^[a-zA-Z0-9_-]{11}$/.test(id))return;
+   const iframe=document.createElement('iframe');
+   iframe.src='https://www.youtube-nocookie.com/embed/'+id+'?autoplay=1&rel=0&playsinline=1'+(start?'&start='+start:'');
+   iframe.title='Depoimento da Mentoria Plena Prosperidade';
+   iframe.setAttribute('allow','accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture;web-share');
+   iframe.setAttribute('allowfullscreen','');
+   iframe.referrerPolicy='strict-origin-when-cross-origin';
+   button.replaceWith(iframe);
+  });
+ });
+ if(reduce)document.documentElement.style.scrollBehavior='auto';
+})();
+</script></body></html>
