@@ -42,6 +42,7 @@
       .offer:hover .art{filter:brightness(1.09)}
       .offer:hover .arrow{transform:translate(3px,-3px);background:rgba(255,255,255,.13)}
     }
+    .offer[hidden]{display:none!important}
     .offer:focus-visible{outline:3px solid var(--gold);outline-offset:4px}
     .art{height:148px;overflow:hidden;position:relative;display:flex;align-items:center;justify-content:center;padding:20px 30px;transition:filter .24s ease}
     .lab .art{background:radial-gradient(ellipse 70% 80% at 50% 10%,rgba(72,118,191,.45),transparent 80%),linear-gradient(135deg,#06111e 12%,#12263f 55%,#07111e)}
@@ -123,7 +124,7 @@
       </div>
     </header>
     <section class="offers" aria-label="Experiências e eventos">
-      <a class="offer lab" data-offer="sdo_lab" href="https://sdolab.1mesemumdia.com/" aria-label="Conhecer a Masterclass SDO Lab">
+      <a class="offer lab" data-offer="sdo_lab" href="https://sdolab.1mesemumdia.com/" aria-label="Conhecer a Masterclass SDO Lab" hidden>
         <div class="art">
           <div class="lab-lockup"><span class="tiny">MASTERCLASS</span><span class="lab-logo-window"><img src="./assets/sdo-lab-logo.png" alt="Logo oficial SDO Lab — Segredos da Odontologia" width="1448" height="1086" decoding="async"></span><span class="small">MÁQUINA DE FATURAMENTO</span></div>
         </div>
